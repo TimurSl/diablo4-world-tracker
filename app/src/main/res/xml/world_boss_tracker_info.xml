@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_widget_description"
+    android:initialKeyguardLayout="@layout/world_boss_tracker"
+    android:initialLayout="@layout/world_boss_tracker"
+    android:minWidth="150dp"
+    android:minHeight="70dp"
+    android:previewImage="@drawable/example_appwidget_preview"
+    android:previewLayout="@layout/world_boss_tracker"
+    android:resizeMode="horizontal"
+    android:targetCellWidth="4"
+    android:targetCellHeight="1"
+    android:minResizeWidth="150dp"
+    android:minResizeHeight="70dp"
+    android:updatePeriodMillis="86400000"
+    android:widgetCategory="home_screen" />

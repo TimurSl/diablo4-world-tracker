@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Diablo4WorldTracker.AppWidget.Container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="1"
+    android:backgroundTint="#00FFFFFF"
+    android:theme="@style/Theme.Diablo4WorldTracker.AppWidgetContainer"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageViewBossImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToOutline="true"
+        android:contentDescription="World Boss Image"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avarice" />
+
+    <TextView
+        android:id="@+id/textViewWidgetType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="@string/widgetTypeNameWorldBoss"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textViewBossName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWidgetType"
+        android:layout_alignStart="@+id/textViewWidgetType"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="World Boss Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Avarice, the Gold Cursed" />
+
+    <TextView
+        android:id="@+id/textViewBossTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="00:00:00"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:text="01:03:09" />
+
+
+</RelativeLayout>
